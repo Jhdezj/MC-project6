@@ -1,0 +1,80 @@
+/* 768px - 1024 px */
+
+@media (min-width: 768px){
+/* Nav bar */
+  nav {
+    grid-template-rows: 32px 48px;
+  }
+
+  .logo{
+    width: auto;
+    height: auto;
+    grid-column: 1/2;
+    grid-row:1/3;
+  }
+
+  .menu{
+    grid-row:2/3;
+  }
+
+  .about_us {
+    grid-column:2/3;
+    grid-row:1/2;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+  }
+
+
+  .featured{
+    display: flex;
+  }
+
+  .contact_us{
+    display: flex;
+  }
+
+  .featured:first-child {
+    margin-left:20px;
+  }
+
+  .featured li {
+  margin-right: 12px;
+
+  }
+
+  .contact_us:last-child {
+    margin-right: 20px;
+  }
+
+  .contact_us li {
+    margin-right:12px;
+  }
+
+
+  .menu {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bars{
+    display: none;
+  }
+
+  .menu_options {
+    display: flex;
+  }
+
+  .menu_options li {
+    padding-left:20px;
+  }
+
+  .menu_options li:nth-child(6),
+  .menu_options li:nth-child(7)
+  {
+    display: none;
+  }
+
+}
