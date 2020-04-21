@@ -20,6 +20,7 @@ a, a:visited, a:focus, a:active{
 nav {
   display: grid;
   grid-template-columns: 106px 1fr;
+  background-color: white;
 }
 
 .logo {
@@ -98,10 +99,21 @@ nav {
 
 .announcements {
   background-color: #fd3;
-  height: 46px;
+  height: 60px;
   display: flex;
-  padding-left:20px;
+  padding-left: 20px;
   align-items: center;
+  justify-content: center;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+}
+
+main{
+  padding-top: 78px;
+  z-index: -1;
 }
 
 /* Feature Articles */
@@ -109,19 +121,20 @@ nav {
 .feature_articles {
   display: grid;
   grid-template-columns: 100%;
-  border:solid;
+  grid-gap: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top:2px;
 }
 
 .feature_articles div{
 height: 184.6px;
-border:solid;
 }
 
 .feature_articles div:first-child,
 .feature_articles div:nth-child(2),
 .feature_articles div:last-child
 {
- background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;

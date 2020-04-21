@@ -96,12 +96,12 @@ color:white;
 .announcements {
   height: 30px;
 }
+
 /* Feature articles */
 
 .feature_articles{
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 237.5px 237.5px;
-  grid-gap: 5px;
+  grid-template-rows: 204.1px 204.1px;
 }
 
 .feature_articles div:nth-child(1){
@@ -118,7 +118,6 @@ color:white;
   grid-row: 1 / 2;
   height: auto;
 }
-
 
 .feature_articles div:nth-child(3){
   grid-column: 2 / 3;

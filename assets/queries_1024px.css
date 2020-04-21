@@ -2,11 +2,12 @@
 
 
 @media (min-width: 1024px){
+
+/* Navbar */
+
   nav{
   grid-template-columns: 1fr;
   }
-
-
 
 .logo {
   display: none;
@@ -26,7 +27,12 @@
   display: block;
 }
 
+/* Feature articles */
 
+.feature_articles{
+  grid-template-rows: 257.125px 257.125px;
+  grid-gap: 5px;
+}
 
 
 
