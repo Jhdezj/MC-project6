@@ -151,3 +151,16 @@ height: 184.6px;
 }
 
 /* latest news */
+.latest_news_wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.latest_news_wrapper div:nth-child(n){
+  display: flex;
+}
+
+.latest_news_wrapper div:nth-child(n) img{
+width: 75px;
+height: 75px;
+}
