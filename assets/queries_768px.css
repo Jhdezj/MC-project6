@@ -100,7 +100,7 @@ color:white;
 
 .feature_articles{
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 123.5px 123.5px;
+  grid-template-rows: 237.5px 237.5px;
   grid-gap: 5px;
 }
 
