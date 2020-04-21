@@ -8,6 +8,13 @@ html {
   font-size: 14px;
 }
 
+a, a:visited, a:focus, a:active{
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+
 /* nav bar */
 
 nav {
@@ -27,7 +34,6 @@ nav {
 }
 
 .logo img {
-  background-color: red;
   height: 16px;
   width: 66px;
 }
@@ -36,6 +42,7 @@ nav {
 .menu_options {
   display: none;
   font-size: 13px;
+
 }
 
 .menu {
@@ -44,6 +51,9 @@ nav {
   grid-column-start: 2;
   height: 48px;
   justify-content: flex-end;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: .04em
 }
 
 .menu_icons {
@@ -89,4 +99,20 @@ nav {
 .announcements {
   background-color: #fd3;
   height: 46px;
+  display: flex;
+  padding-left:20px;
+  align-items: center;
+}
+
+/* Feature Articles */
+
+.feature_articles {
+  display: grid;
+  grid-template-columns: 100%;
+  border:solid;
+}
+
+.feature_articles div{
+height: 107px;
+border:solid;
 }
