@@ -34,6 +34,17 @@
   grid-gap: 5px;
 }
 
+/* Latest News */
+
+
+.latest_news_wrapper {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.latest_news_picture {
+height: 11vw;
+}
 
 
 }

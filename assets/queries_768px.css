@@ -125,6 +125,26 @@ color:white;
   height: auto;
 }
 
+/* latest news */
+
+.latest_news_wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+
+.latest_news_wrapper div:nth-child(n){
+  display: flex;
+  flex-direction: column;
+}
+
+
+.latest_news_picture {
+width: 100%;
+height: 15vw;
+background-size: cover;
+background-repeat: no-repeat;
+}
 
 
 }

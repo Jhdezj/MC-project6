@@ -151,6 +151,10 @@ height: 184.6px;
 }
 
 /* latest news */
+.latest_news{
+  margin: 30px;
+}
+
 .latest_news_wrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -160,7 +164,42 @@ height: 184.6px;
   display: flex;
 }
 
-.latest_news_wrapper div:nth-child(n) img{
+.latest_news_picture {
 width: 75px;
 height: 75px;
+min-width: 75px;
+background-size: cover;
+background-position: 50%;
+}
+
+.latest_news_wrapper div:nth-child(1)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Stimulus-danger-514x270.jpg);
+}
+
+.latest_news_wrapper div:nth-child(2)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/OKR-516x270.png);
+}
+
+.latest_news_wrapper div:nth-child(3)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Sydney-opera-house-514x270.jpg);
+}
+
+.latest_news_wrapper div:nth-child(4)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Card-Debit-505x270.jpg);
+}
+
+.latest_news_wrapper div:nth-child(5)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Coronavirus-516x270.jpg);
+}
+
+.latest_news_wrapper div:nth-child(6)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Copy-of-...-10-516x270.png);
+}
+
+.latest_news_wrapper div:nth-child(7)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/sale_27301_primary_image_wide-540x270.jpg);
+}
+
+.latest_news_wrapper div:nth-child(8)>div {
+background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/sale_27378_primary_image_wide-540x270.jpg);
 }
