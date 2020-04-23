@@ -6,6 +6,8 @@
 
 html {
   font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: .04em
 }
 
 a, a:visited, a:focus, a:active{
@@ -284,4 +286,100 @@ flex-direction: column;
   display: inline-block;
   width: 16px;
   height: 16px;
+}
+/* options section */
+
+.options{
+  margin: 20px;
+}
+
+.options h2{
+  letter-spacing: -.015em;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: sans-serif;
+  color:#f42;
+}
+
+.options_wrapper{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 20px;
+}
+.feature_image{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_fce025fa-368x276.png);
+  background-repeat: no-repeat;
+  height: 300px;
+  border: solid;
+  background-size: cover;
+  background-position: 50%;
+  margin-bottom: 2px;
+}
+
+.feature_image p:first-child{
+margin-top: 200px;
+}
+
+.feature_image p{
+  margin-left: 10px;
+}
+
+.option_img {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Meet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+}
+
+.options_wrapper div:nth-child(n) div:nth-child(3) {
+  display: flex;
+}
+
+.options_wrapper div:nth-child(n) div:nth-child(3) p {
+  margin-right: 30px;
+  margin-top: 10px;
+  color:#f42;
+}
+
+
+.options_wrapper div:nth-child(n) ul {
+  margin-left: 15px;
+  color: #555;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-size: 13px;
+}
+
+.options_wrapper div:nth-child(n) li {
+padding-bottom: 6px;
+border-bottom: solid #eeeeee 1px;
+padding-top: 4px;
+
+}
+
+
+.options_wrapper div:nth-child(n) li::before {
+content: "\2022";
+ color: red;
+ font-weight: bold;
+ display: inline-block;
+ width: 1em;
+ margin-left: -1em;
+}
+
+.options_wrapper div:nth-child(n) div:nth-child(3) p {
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.options_wrapper div:nth-child(n) div:nth-child(3) span {
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.options_wrapper div:nth-child(n) div:nth-child(3){
+  background-color: #fff4f2;
 }

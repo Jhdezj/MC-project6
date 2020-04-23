@@ -52,4 +52,10 @@ height: 11vw;
   display:block;
 }
 
+/* options section */
+
+.options_wrapper{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 }

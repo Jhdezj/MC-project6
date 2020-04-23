@@ -157,5 +157,10 @@ background-repeat: no-repeat;
   display: flex;
 }
 
+/* options section */
+
+.options_wrapper{
+  grid-template-columns: 1fr 1fr;
+}
 
 }
