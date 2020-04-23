@@ -46,5 +46,10 @@
 height: 11vw;
 }
 
+/*latest funding rounds */
+
+.funding_rounds div:nth-child(4){
+  display:block;
+}
 
 }

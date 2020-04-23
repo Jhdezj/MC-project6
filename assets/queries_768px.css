@@ -146,5 +146,16 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
+/*latest funding rounds*/
+
+.funding_rounds_menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.funding_rounds{
+  display: flex;
+}
+
 
 }

@@ -152,7 +152,7 @@ height: 184.6px;
 
 /* latest news */
 .latest_news{
-  margin: 30px;
+  margin: 15px;
 }
 
 .latest_news_wrapper {
@@ -202,4 +202,86 @@ background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/
 
 .latest_news_wrapper div:nth-child(8)>div {
 background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/sale_27378_primary_image_wide-540x270.jpg);
+}
+
+/*latest funding rounds*/
+
+.latest_funding_rounds{
+  color:#f42;
+  margin:  15px;
+}
+
+.funding_rounds_menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.funding_rounds_menu p{
+  margin: 11px 0;
+  font-weight: 500;
+  font-family: sans-serif;
+  letter-spacing: .04em
+}
+
+.latest_funding_rounds{
+display: flex;
+flex-direction: column;
+}
+
+.funding_rounds div:nth-child(n){
+  border: solid;
+  margin: 5px;
+}
+
+.funding_rounds div:nth-child(4){
+  display:none;
+}
+
+.funding_rounds div:nth-child(n) h3{
+    background-color: #f42;
+    color: white;
+    height: 43.83px;
+    padding: 10.66px 16px 16.66px 84px;
+
+}
+
+.funding_rounds div:nth-child(n) p:first-of-type{
+  background-color: #ffece7;
+}
+
+.funding_rounds div:nth-child(n) img:first-of-type{
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-top: 10.66px;
+  margin-left: 10.66px;
+}
+
+.capital {
+  color: black;
+  padding: 15px 0 5px 85px;
+  line-height: 16.5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.capital span {
+  opacity: .5;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.44px;
+  font-family: sans-serif;
+}
+
+.latest_funding_rounds h2{
+  letter-spacing: -.015em;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+
+.latest_funding_rounds h2 img{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
 }
