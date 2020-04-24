@@ -463,3 +463,56 @@ line-height: 30px;
 text-decoration: line-through;
 color:#aaa;
 }
+
+/* footer */
+
+.contact_links{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 170px;
+}
+
+.media{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top:70px;
+}
+
+.media li{
+  width: 40px;
+  height: 40px;
+  border: solid;
+  margin: 5px;
+}
+
+.facebook{
+  background-image: transparent url(assets/images/facebook.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.contact_options{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contact_options li{
+  margin: 5px;
+}
+
+
+.copy_rigths {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 98px;
+  background-color: black;
+  color: white;
+  padding-top: 40px
+}

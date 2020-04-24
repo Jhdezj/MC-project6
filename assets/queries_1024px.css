@@ -58,4 +58,14 @@ height: 11vw;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+
+/* Latest deals*/
+.deals_wrapper{
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
 }

@@ -165,7 +165,6 @@ background-repeat: no-repeat;
 
 /* Latest deals*/
 .deals_wrapper{
-display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 15px;
 }
@@ -176,11 +175,8 @@ grid-gap: 15px;
 
 
 .deals_image{
-
-
   width: 100%;
   height: 27vh;
-
 }
 
 
