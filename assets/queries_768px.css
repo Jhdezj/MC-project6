@@ -163,4 +163,25 @@ background-repeat: no-repeat;
   grid-template-columns: 1fr 1fr;
 }
 
+/* Latest deals*/
+.deals_wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 15px;
+}
+
+.deals_wrapper>div:nth-child(n){
+  flex-direction: column;
+}
+
+
+.deals_image{
+
+
+  width: 100%;
+  height: 27vh;
+
+}
+
+
 }
