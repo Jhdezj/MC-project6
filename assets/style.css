@@ -484,16 +484,52 @@ color:#aaa;
 .media li{
   width: 40px;
   height: 40px;
-  border: solid;
   margin: 5px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #333333;
 }
 
-.facebook{
-  background-image: transparent url(assets/images/facebook.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.media i{
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
+.facebook i{
+  background: transparent url(images/sprite.svg);
+  background-position: -272px -272px;
+}
+
+.twitter i{
+  background: transparent url(images/sprite.svg);
+  background-position: -1024px -1024px;
+}
+
+.youtube i{
+  background: transparent url(images/sprite.svg);
+  background-position: -1280px -1280px;
+}
+
+.instagram i{
+  background: transparent url(images/sprite.svg);
+  background-position: -416px -416px;
+}
+
+.pinterest i{
+  background: transparent url(images/sprite.svg);
+  background-position: -272px -272px;
+}
+
+.rss i{
+  background: transparent url(images/sprite.svg);
+  background-position: -672px -672px;
+}
+
+.mail i{
+  background: transparent url(images/sprite.svg);
+  background-position: -576px -576px;
+}
 
 .contact_options{
   display: flex;
