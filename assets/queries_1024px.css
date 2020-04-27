@@ -32,7 +32,10 @@
 .feature_articles{
   grid-gap: 5px;
   margin-top: 32px;
+  grid-template-rows: 35vh 35vh;
 }
+
+
 
 .feature_articles .main_cover img{
   display: block;
@@ -42,28 +45,20 @@
   margin-left: 24px;
 }
 
-
 .main_cover h1{
-  position: absolute;
-  width: 60%;
-  bottom: 30px;
-  left:30px;
+  font-size: 55px;
+  margin-top: 0;
+  line-height: 50px;
 }
 
 
-.main_cover .classification{
-  position: absolute;
-  bottom: 72px;
-  left:72px;
+.feature_articles .share_icon {
+display: inline-block;
 }
 
-.main_cover .author{
-  position: absolute;
-  bottom: 18px;
-  left:18px;
-  background-color: blue;
+.feature_articles .share_count{
+  display: inline;
 }
-
 /* Latest News */
 
 

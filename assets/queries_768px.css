@@ -110,7 +110,7 @@ header{
 
 .feature_articles{
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 35vh 37vh;
+  grid-template-rows: 30vh 30vh;
 }
 
 .feature_articles .main_cover{
@@ -137,8 +137,9 @@ header{
 
 }
 .main_cover h1{
-  font-size: 55px;
+  font-size: 40px;
   margin-top: 0;
+  line-height: 40px;
 }
 
 
@@ -146,8 +147,18 @@ header{
   background: url("images/image-gradient.png"), url("images/cover-gradient.png"), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%, cover, cover;
-  color:white;
+
 }
+
+
+.feature_articles .share_icon {
+display: none;
+}
+
+.feature_articles .share_count{
+  display: none;
+}
+
 
 /* latest news */
 
