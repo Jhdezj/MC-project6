@@ -7,7 +7,6 @@
 html {
   font-size: 14px;
   font-family: sans-serif;
-  letter-spacing: .04em
 }
 
 a, a:visited, a:focus, a:active{
@@ -45,7 +44,12 @@ nav {
 .menu_options {
   display: none;
   font-size: 13px;
+}
 
+@media (max-width: 830px){
+  .contact_us:last-child{
+    display: none;
+  }
 }
 
 .menu {
@@ -54,8 +58,7 @@ nav {
   grid-column-start: 2;
   height: 48px;
   justify-content: flex-end;
-  font-weight: 600;
-  font-family: sans-serif;
+  font-weight: 500;
   letter-spacing: .04em
 }
 
@@ -118,6 +121,31 @@ main{
   z-index: -1;
 }
 
+.business{
+  position: relative;
+}
+.business ul{
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.6);
+}
+.business ul li{
+  margin: 15px 0;
+  padding-left: 5px;
+  width: 220px;
+}
+
+.featured li:nth-child(3):hover ul {
+display: block;
+}
+
+.featured>li:first-child{
+  color: white;
+}
+
+
 /* Feature Articles */
 
 .feature_articles {
@@ -126,31 +154,77 @@ main{
   grid-gap: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top:2px;
+  padding-top: 2px;
+  margin-top: 5px;
+  position: relative;
+  /* z-index: -1;   this is causing problems when editing*/
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.feature_articles div{
-height: 184.6px;
+.feature_articles>div{
+height: 29vh;
 }
 
-.feature_articles div:first-child,
-.feature_articles div:nth-child(2),
-.feature_articles div:last-child
+ .main_cover img{
+  display:none;
+}
+
+/* .main_cover .classification{
+  position: absolute;
+  bottom: 72px;
+  left:72px;
+} */
+
+/* .main_cover h1{
+  position: absolute;
+  width: 60%;
+  bottom: 30px;
+  left:30px;
+} */
+
+
+ .author{
+  position: absolute;
+  bottom: 18px;
+  left:18px;
+  font-size: 12px;
+}
+
+.main_cover .date, .sub_cover_a .date, .sub_cover_b .date{
+  display: none;
+}
+
+.main_cover, .sub_cover_a, .sub_cover_b{
+  position: relative;
+}
+
+/*
+.main_cover{
+  background: url("images/image-gradient.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
+
+
+.image_position
 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
 }
 
-.feature_articles div:first-child{
- background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
+
+.main_cover{
+background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
+position: relative;
 }
-.feature_articles div:nth-child(2){
+.sub_cover_a {
  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg");
 }
-.feature_articles div:last-child{
+.sub_cover_b{
  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-796x417.png");
 }
+
 
 /* latest news */
 .latest_news{
@@ -543,7 +617,7 @@ color:#aaa;
 }
 
 
-.copy_rigths {
+.copy_rights {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -552,3 +626,12 @@ color:#aaa;
   color: white;
   padding-top: 40px
 }
+/*
+.tringle{
+  width:0;
+  height: 0;
+  border-bottom: solid 23px;
+  border-left: solid red 23px;
+  border-right: solid blue 23px;
+  margin: 500px;
+} */

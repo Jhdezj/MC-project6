@@ -30,9 +30,6 @@
 .about_us li:hover{
 color:white;
 }
-.featured li:first-child{
-  color: white;
-}
 
   .menu li {
     color: #aaa;
@@ -60,7 +57,7 @@ color:white;
   }
 
   .contact_us:last-child {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .contact_us li {
@@ -97,32 +94,59 @@ color:white;
   height: 30px;
 }
 
+header{
+  position: static;
+}
+
+
+
+
+header{
+  position: fixed;
+  top: 0;
+}
+
 /* Feature articles */
 
 .feature_articles{
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 204.1px 204.1px;
+  grid-template-rows: 35vh 37vh;
 }
 
-.feature_articles div:nth-child(1){
+.feature_articles .main_cover{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: blue;
   height: auto;
 }
 
-.feature_articles div:nth-child(2){
+.feature_articles .sub_cover_a{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   height: auto;
 }
 
-.feature_articles div:nth-child(3){
+.feature_articles .sub_cover_b{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   height: auto;
+}
+
+.main_cover p{
+
+}
+.main_cover h1{
+  font-size: 55px;
+  margin-top: 0;
+}
+
+
+.main_cover{
+  background: url("images/image-gradient.png"), url("images/cover-gradient.png"), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover, cover;
+  color:white;
 }
 
 /* latest news */

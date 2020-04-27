@@ -30,8 +30,38 @@
 /* Feature articles */
 
 .feature_articles{
-  grid-template-rows: 257.125px 257.125px;
   grid-gap: 5px;
+  margin-top: 32px;
+}
+
+.feature_articles .main_cover img{
+  display: block;
+  max-width: 50%;
+  max-height: 112px;
+  margin-top:24px;
+  margin-left: 24px;
+}
+
+
+.main_cover h1{
+  position: absolute;
+  width: 60%;
+  bottom: 30px;
+  left:30px;
+}
+
+
+.main_cover .classification{
+  position: absolute;
+  bottom: 72px;
+  left:72px;
+}
+
+.main_cover .author{
+  position: absolute;
+  bottom: 18px;
+  left:18px;
+  background-color: blue;
 }
 
 /* Latest News */
