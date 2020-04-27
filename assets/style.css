@@ -264,6 +264,7 @@ position: relative;
 .latest_news_wrapper {
   display: grid;
   grid-template-columns: 100%;
+  grid-gap: 12px;
 }
 
 .latest_news_wrapper div:nth-child(n){
@@ -277,6 +278,34 @@ min-width: 75px;
 background-size: cover;
 background-position: 50%;
 }
+
+
+.latest_news h2{
+  letter-spacing: -.015em;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: sans-serif;
+  color:#f42;
+  margin-bottom: 25px;
+}
+
+.latest_news h2 img{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.latest_news h3{
+  margin-left: 12px;
+}
+
+.latest_news .author, .latest_news .time{
+  color: #aaa;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 0;
+}
+
 
 .latest_news_wrapper div:nth-child(1)>div {
 background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Stimulus-danger-514x270.jpg);

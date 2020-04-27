@@ -181,6 +181,19 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
+.latest_news .author, .latest_news .time{
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 5px;
+
+}
+.latest_news h3 {
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+
+
 /*latest funding rounds*/
 
 .funding_rounds_menu{
