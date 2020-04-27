@@ -205,6 +205,25 @@ background-repeat: no-repeat;
   display: flex;
 }
 
+.funding_rounds>div:nth-child(n){
+  width: 33.3%;
+}
+
+.funding_rounds_menu p:nth-child(2){
+  border: #f42 solid;
+  border-width: 0 1.5px;
+  padding: 0 5px;
+
+}
+.funding_rounds_menu p {
+  margin:10px 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.latest_funding_rounds h2 {
+  padding-left: 5px;
+}
 /* options section */
 
 .options_wrapper{

@@ -87,8 +87,18 @@ height: 11vw;
 
 /*latest funding rounds */
 
+.funding_rounds_menu_wrapper{
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .funding_rounds div:nth-child(4){
   display:block;
+}
+
+.latest_funding_rounds h2 {
+  padding-left: 5px;
 }
 
 /* options section */

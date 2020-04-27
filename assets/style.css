@@ -340,11 +340,24 @@ background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/
 }
 
 /*latest funding rounds*/
-
-.latest_funding_rounds{
+ .latest_funding_rounds{
   color:#f42;
-  margin:  15px;
+  margin: 15px;
 }
+
+.latest_funding_rounds h2{
+  letter-spacing: -.015em;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+
+.latest_funding_rounds h2 img{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
 
 .funding_rounds_menu{
   display: flex;
@@ -357,19 +370,12 @@ background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/
   font-family: sans-serif;
   letter-spacing: .04em
 }
-
-.latest_funding_rounds{
-display: flex;
-flex-direction: column;
-}
-
-.funding_rounds div:nth-child(n){
-  border: solid;
-  margin: 5px;
-}
-
-.funding_rounds div:nth-child(4){
-  display:none;
+.funding_rounds div:nth-child(n) img:first-of-type{
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-top: 10.66px;
+  margin-left: 10.66px;
 }
 
 .funding_rounds div:nth-child(n) h3{
@@ -380,17 +386,26 @@ flex-direction: column;
 
 }
 
-.funding_rounds div:nth-child(n) p:first-of-type{
+
+.latest_funding_rounds{
+display: flex;
+flex-direction: column;
+}
+
+.funding_rounds>div:nth-child(n){
+  margin: 5px;
+}
+
+.funding_rounds>div:nth-child(4){
+  display:none;
+}
+
+
+.funding_rounds>div:nth-child(n) p:first-of-type{
   background-color: #ffece7;
 }
 
-.funding_rounds div:nth-child(n) img:first-of-type{
-  float: left;
-  width: 60px;
-  height: 60px;
-  margin-top: 10.66px;
-  margin-left: 10.66px;
-}
+
 
 .capital {
   color: black;
@@ -408,17 +423,54 @@ flex-direction: column;
   font-family: sans-serif;
 }
 
-.latest_funding_rounds h2{
-  letter-spacing: -.015em;
-  font-weight: 700;
-  font-size: 28px;
-  font-family: sans-serif;
+
+
+
+.latest_funding_rounds .tag_icon {
+display:inline-block;
+background: transparent url(images/sprite.svg) no-repeat;
+background-position: -976px -976px;
+width: 16px;
+height: 16px;
+vertical-align: middle;
+margin-left: 12px;
+margin-right: 12px;
+line-height: 70px;
 }
 
-.latest_funding_rounds h2 img{
-  display: inline-block;
+.latest_funding_rounds .briefcase_icon{
+  display:inline-block;
+  background: transparent url(images/sprite.svg) no-repeat;
+  background-position: -48px -48px;
   width: 16px;
   height: 16px;
+  vertical-align: middle;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.funding_rounds{
+  color: black;
+}
+
+.funding_rounds .data {
+  line-height: 30px;
+  padding: 10px 0;
+  font-size: 12px;
+  background-color: #fffaf8;
+}
+
+.funding_rounds .summary {
+
+  line-height: 20px;
+  border-top: solid 1px #ffccc2;
+  padding: 10px 12px 10px 15px;
+  font-size: 12px;
+  background-color: #fffaf8;
+}
+
+.funding_rounds .summary span{
+  color: #aaa;
 }
 /* options section */
 
