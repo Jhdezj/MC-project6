@@ -51,6 +51,10 @@
   line-height: 50px;
 }
 
+.sub_cover_a h1, .sub_cover_b h1{
+  font-size: 28px;
+  line-height: 30.8px;
+}
 
 .feature_articles .share_icon {
 display: inline-block;
@@ -59,6 +63,16 @@ display: inline-block;
 .feature_articles .share_count{
   display: inline;
 }
+
+.main_cover .date{
+display: block;
+height: 30px;
+position: absolute;
+top:18px;
+right: 20px;
+
+}
+
 /* Latest News */
 
 
