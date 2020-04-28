@@ -706,7 +706,7 @@ grid-gap:  5px;
 }
 
 .deals_image{
-  background-image: url(https://cdnp1.stackassets.com/e5814c7482460a462c26d06b517066a1086cdf70/store/10ebcfc38f40fac5c072e3863fef177ecbe48b5e2f3075c55ecf09597d51/sale_27421_primary_image.jpg);
+  /* background-image: url(https://cdnp1.stackassets.com/e5814c7482460a462c26d06b517066a1086cdf70/store/10ebcfc38f40fac5c072e3863fef177ecbe48b5e2f3075c55ecf09597d51/sale_27421_primary_image.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -714,6 +714,41 @@ grid-gap:  5px;
   width: 75px;
   min-width: 75px;
 }
+
+.deals_wrapper>div:nth-child(1) .deals_image{
+  background-image: url(images/sales1.jpg);
+}
+
+.deals_wrapper>div:nth-child(2) .deals_image{
+  background-image: url(images/sales2.jpg);
+}
+
+.deals_wrapper>div:nth-child(3) .deals_image{
+  background-image: url(images/sales3.jpg);
+}
+
+.deals_wrapper>div:nth-child(4) .deals_image{
+  background-image: url(images/sales4.jpg);
+}
+
+.deals_wrapper>div:nth-child(5) .deals_image{
+  background-image: url(images/sales5.jpg);
+}
+
+.deals_wrapper>div:nth-child(6) .deals_image{
+  background-image: url(images/sales6.jpg);
+}
+
+.deals_wrapper>div:nth-child(7) .deals_image{
+  background-image: url(images/sales7.jpg);
+}
+
+.deals_wrapper>div:nth-child(8) .deals_image{
+  background-image: url(images/sales8.jpg);
+}
+
+
+
 
 .deals_image p{
   display: none;
