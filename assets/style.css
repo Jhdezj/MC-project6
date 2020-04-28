@@ -423,9 +423,6 @@ flex-direction: column;
   font-family: sans-serif;
 }
 
-
-
-
 .latest_funding_rounds .tag_icon {
 display:inline-block;
 background: transparent url(images/sprite.svg) no-repeat;
@@ -492,8 +489,8 @@ line-height: 70px;
   grid-template-columns: 100%;
   grid-gap: 20px;
 }
-.feature_image{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Snag_fce025fa-368x276.png);
+ .feature_image{
+
   background-repeat: no-repeat;
   height: 300px;
   border: solid;
@@ -503,7 +500,22 @@ line-height: 70px;
 }
 
 .feature_image p:first-child{
-margin-top: 200px;
+margin-top: 175px;
+font-size: 13px;
+line-height: 19.5px;
+}
+
+.feature_image p:nth-child(2){
+font-size: 20px;
+line-height: 22px;
+font-weight: 700;
+}
+
+.feature_image p:nth-child(3){
+font-size: 12px;
+line-height: 16px;
+margin-top: 7px;
+opacity: .6;
 }
 
 .feature_image p{
@@ -511,7 +523,7 @@ margin-top: 200px;
 }
 
 .option_img {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Meet.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -556,19 +568,102 @@ content: "\2022";
  margin-left: -1em;
 }
 
-.options_wrapper div:nth-child(n) div:nth-child(3) p {
+.options_wrapper>div:nth-child(n) div:nth-child(3) p {
   font-weight: 700;
   line-height: 17px;
 }
 
-.options_wrapper div:nth-child(n) div:nth-child(3) span {
+.options_wrapper>div:nth-child(n) div:nth-child(3) span {
   font-weight: 500;
   line-height: 17px;
 }
 
-.options_wrapper div:nth-child(n) div:nth-child(3){
+.options_wrapper>div:nth-child(n) div:nth-child(3){
   background-color: #fff4f2;
 }
+
+
+.options_wrapper>div:nth-child(1) .feature_image{
+  background-image:  url("images/image-gradient.png"), url(images/Apps.png);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(2) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Gear.png);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(3) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Tech.jpg);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(4) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Creative.jpg);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(5) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Podium.png);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(6) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Insights.jpg);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(7) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Launch.jpg);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(8) .feature_image{
+  background-image: url("images/image-gradient.png"), url(images/Distract.jpg);
+  background-size: 100% 100%, cover;
+  color: white;
+}
+
+.options_wrapper>div:nth-child(1) .option_img{
+ background-image: url(images/Apps_sub.jpg);
+}
+
+.options_wrapper>div:nth-child(2) .option_img{
+ background-image: url(images/Gear_sub.png);
+}
+
+.options_wrapper> div:nth-child(3) .option_img{
+ background-image: url(images/latest_f4.jpg);
+}
+
+.options_wrapper> div:nth-child(4) .option_img{
+  background-image: url(images/Creative_sub.jpg);
+}
+
+.options_wrapper>div:nth-child(5) .option_img{
+ background-image: url(images/Podium_sub.jpg);
+}
+
+.options_wrapper> div:nth-child(6) .option_img{
+  background-image: url(images/Insights_sub.png);
+}
+
+.options_wrapper>div:nth-child(7) .option_img{
+  background-image: url(images/Launch_sub.png);
+}
+
+.options_wrapper>div:nth-child(8) .option_img{
+  background-image: url(images/Distract_sub.jpg);
+}
+
+
 
 /* Latest deals*/
 
