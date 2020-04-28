@@ -137,7 +137,7 @@ main{
   width: 220px;
 }
 
-.featured li:nth-child(3):hover ul {
+.featured>li:nth-child(3):hover ul {
 display: block;
 }
 
@@ -165,7 +165,7 @@ display: block;
 height: 28vh;
 }
 
- .main_cover img, .sub_cover_a img, .sub_cover_b img{
+ .main_cover>img, .sub_cover_a>img, .sub_cover_b>img{
 display:none;
 }
 
@@ -187,7 +187,7 @@ line-height: 23px;
 }
 
 
- .author{
+ .feature_articles   .author{
   font-size: 12px;
   margin-left: 18px;}
 
@@ -217,18 +217,12 @@ display:inline-block;
 background: transparent url(images/sprite.svg) no-repeat;
 background-position: -912px -912px;
 opacity: .6;
+
 width: 16px;
 height: 16px;
 scale: .875;
 vertical-align: middle;
 }
-
-/*
-.main_cover{
-  background: url("images/image-gradient.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-} */
 
 
 .image_position
@@ -239,18 +233,18 @@ vertical-align: middle;
 }
 
 
-.main_cover{
-background-image:  url("images/image-gradient.png"), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
+ .main_cover{
+background: url("images/image-gradient.png"), url("images/main_cover.jpg");
 background-size: 100% 100%, cover;
 position: relative;
 }
-.sub_cover_a {
- background-image: url("images/image-gradient.png"), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg");
+.feature_articles .sub_cover_a {
+ background-image: url("images/image-gradient.png"), url("images/subcover_a.jpg");
  background-size: 100% 100%, cover;
  position: relative;
 }
-.sub_cover_b{
- background-image: url("images/image-gradient.png"), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-796x417.png");
+.feature_articles .sub_cover_b{
+ background-image: url("images/image-gradient.png"), url("images/subcover_b.png");
  background-size: 100% 100%, cover;
  position: relative;
 }
@@ -308,35 +302,35 @@ background-position: 50%;
 
 
 .latest_news_wrapper div:nth-child(1)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Stimulus-danger-514x270.jpg);
+background-image: url(images/Latest_n1.jpg);
 }
 
 .latest_news_wrapper div:nth-child(2)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/OKR-516x270.png);
+background-image: url(images/Latest_n2.png);
 }
 
 .latest_news_wrapper div:nth-child(3)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Sydney-opera-house-514x270.jpg);
+background-image: url(images/Latest_n3.jpg);
 }
 
 .latest_news_wrapper div:nth-child(4)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Card-Debit-505x270.jpg);
+background-image: url(images/Latest_n4.jpg);
 }
 
 .latest_news_wrapper div:nth-child(5)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Coronavirus-516x270.jpg);
+background-image: url(images/Latest_n5.jpg);
 }
 
 .latest_news_wrapper div:nth-child(6)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Copy-of-...-10-516x270.png);
+background-image: url(images/Latest_n6.png);
 }
 
 .latest_news_wrapper div:nth-child(7)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/sale_27301_primary_image_wide-540x270.jpg);
+background-image: url(images/Latest_n7.jpg);
 }
 
 .latest_news_wrapper div:nth-child(8)>div {
-background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/sale_27378_primary_image_wide-540x270.jpg);
+background-image: url(images/Latest_n8.jpg);
 }
 
 /*latest funding rounds*/
@@ -416,7 +410,8 @@ flex-direction: column;
 }
 
 .capital span {
-  opacity: .5;
+  /* opacity: .5; */
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 11px;
   letter-spacing: 0.44px;
@@ -515,7 +510,8 @@ font-weight: 700;
 font-size: 12px;
 line-height: 16px;
 margin-top: 7px;
-opacity: .6;
+/* opacity: .6; */
+color: rgba(255, 255, 255, 0.6);
 }
 
 .feature_image p{
@@ -590,43 +586,43 @@ content: "\2022";
 }
 
 .options_wrapper>div:nth-child(2) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Gear.png);
+  background-image: url("images/image-gradient.png"), url("images/Gear.png");
   background-size: 100% 100%, cover;
   color: white;
 }
 
 .options_wrapper>div:nth-child(3) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Tech.jpg);
+  background-image: url("images/image-gradient.png"), url("images/Tech.jpg");
   background-size: 100% 100%, cover;
   color: white;
 }
 
 .options_wrapper>div:nth-child(4) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Creative.jpg);
+  background-image: url("images/image-gradient.png"), url("images/Creative.jpg");
   background-size: 100% 100%, cover;
   color: white;
 }
 
 .options_wrapper>div:nth-child(5) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Podium.png);
+  background-image: url("images/image-gradient.png"), url("images/Podium.png");
   background-size: 100% 100%, cover;
   color: white;
 }
 
 .options_wrapper>div:nth-child(6) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Insights.jpg);
+  background-image: url("images/image-gradient.png"), url("images/Insights.jpg");
   background-size: 100% 100%, cover;
   color: white;
 }
 
 .options_wrapper>div:nth-child(7) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Launch.jpg);
+  background-image: url("images/image-gradient.png"), url("images/Launch.jpg");
   background-size: 100% 100%, cover;
   color: white;
 }
 
 .options_wrapper>div:nth-child(8) .feature_image{
-  background-image: url("images/image-gradient.png"), url(images/Distract.jpg);
+  background-image: url("images/image-gradient.png"), url("images/Distract.jpg");
   background-size: 100% 100%, cover;
   color: white;
 }
@@ -706,7 +702,6 @@ grid-gap:  5px;
 }
 
 .deals_image{
-  /* background-image: url(https://cdnp1.stackassets.com/e5814c7482460a462c26d06b517066a1086cdf70/store/10ebcfc38f40fac5c072e3863fef177ecbe48b5e2f3075c55ecf09597d51/sale_27421_primary_image.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -746,8 +741,6 @@ grid-gap:  5px;
 .deals_wrapper>div:nth-child(8) .deals_image{
   background-image: url(images/sales8.jpg);
 }
-
-
 
 
 .deals_image p{
@@ -867,12 +860,3 @@ color:#aaa;
   color: white;
   padding-top: 40px
 }
-/*
-.tringle{
-  width:0;
-  height: 0;
-  border-bottom: solid 23px;
-  border-left: solid red 23px;
-  border-right: solid blue 23px;
-  margin: 500px;
-} */

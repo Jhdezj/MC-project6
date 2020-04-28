@@ -143,11 +143,10 @@ header{
 }
 
 
-.main_cover{
-  background: url("images/image-gradient.png"), url("images/cover-gradient.png"), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-25-796x417.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%, cover, cover;
-
+ .main_cover{
+background: url("images/image-gradient.png"), url("images/cover-gradient.png"), url("images/main_cover.jpg");
+background-size: 100% 100%, cover, cover;
+background-repeat: no-repeat;
 }
 
 
