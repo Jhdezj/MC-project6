@@ -245,5 +245,17 @@ grid-gap: 15px;
   height: 175px;
 }
 
+/* footer */
+
+
+.media li{
+  margin: 8px;
+}
+
+.copy_rights {
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+}
 
 }

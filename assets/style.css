@@ -16,7 +16,7 @@ a, a:visited, a:focus, a:active{
 }
 
 
-/* nav bar */
+
 
 nav {
   display: grid;
@@ -39,6 +39,8 @@ nav {
   height: 16px;
   width: 66px;
 }
+
+
 
 .about_us,
 .menu_options {
@@ -114,11 +116,11 @@ nav {
 header{
   width: 100%;
   position: fixed;
+  z-index: 5;
 }
 
 main{
   padding-top: 78px;
-  z-index: -1;
 }
 
 .business{
@@ -156,8 +158,6 @@ display: block;
   padding-right: 8px;
   padding-top: 2px;
   margin-top: 5px;
-  position: relative;
-   z-index: -1;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -189,11 +189,20 @@ line-height: 23px;
 
  .feature_articles   .author{
   font-size: 12px;
-  margin-left: 18px;}
+  margin-left: 18px;
+  position: relative;
+  z-index: 10;
+}
+
+.feature_articles .name:hover{
+  color: white;
+}
 
 .main_cover .date, .sub_cover_a .date, .sub_cover_b .date{
   display: none;
   color: white;
+  position: relative;
+  z-index: 40;
 }
 
 .main_cover, .sub_cover_a, .sub_cover_b{
@@ -231,7 +240,15 @@ vertical-align: middle;
   background-size: cover;
   background-position: 50%;
 }
-
+.cover_rapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index:5;
+  border: red;
+}
 
  .main_cover{
 background: url("images/image-gradient.png"), url("images/main_cover.jpg");
@@ -283,16 +300,65 @@ background-position: 50%;
   margin-bottom: 25px;
 }
 
-.latest_news h2 img{
+h2 a::after{
+background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+background-size: 16px 16px;
+content: "";
+display: inline-block;
+height: 16px;
+margin-left: 4px;
+position: relative;
+top: 0;
+width: 16px;
+}
+
+h2 a:hover{
+  color: black;
+}
+
+h2 a:hover::after {
+background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23000" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+}
+
+
+/* .latest_news h2 img{
   display: inline-block;
   width: 16px;
   height: 16px;
+} */
+
+/* h2 path::before{
+  content: "algo";
 }
+
+h2 path:hover {
+  stroke: black;
+}
+
+.latest_news svg {
+  fill:none;
+  stroke:#F42;
+  stroke-width:3;
+  stroke-miterlimit:10;
+
+}
+.latest_news svg{
+  width: 16px;
+  height: 16px;
+} */
 
 .latest_news h3{
   margin-left: 12px;
 }
 
+.latest_news h3 a:hover{
+  color: #f42;
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+}
+
+.latest_news .author a:hover{
+  color: #555;
+}
 .latest_news .author, .latest_news .time{
   color: #aaa;
   font-weight: 400;
@@ -356,7 +422,14 @@ background-image: url(images/Latest_n8.jpg);
 .funding_rounds_menu{
   display: flex;
   flex-direction: column;
+
 }
+.funding_rounds_menu a:hover{
+  color:black;
+}
+
+.funding_rounds .data{color: #555;}
+.funding_rounds .data a:hover{color: black}
 
 .funding_rounds_menu p{
   margin: 11px 0;
@@ -395,10 +468,13 @@ flex-direction: column;
 }
 
 
-.funding_rounds>div:nth-child(n) p:first-of-type{
+/* .funding_rounds>div:nth-child(n) p:first-of-type{
+  background-color: #ffece7;
+} */
+
+.funding_rounds>div:nth-child(n) .capital{
   background-color: #ffece7;
 }
-
 
 
 .capital {
@@ -494,6 +570,24 @@ line-height: 70px;
   margin-bottom: 2px;
 }
 
+.options .description a:hover {
+  box-shadow: inset 0 -1px 0 hsla(0,0%,100%,.3);
+}
+
+.options .author a:hover{
+  color: white;
+}
+
+.options .latest_description {
+  font-weight: 700;
+}
+.options .latest_description a:hover{
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
+}
+.options .list li a:hover{
+  color: black;
+}
+
 .feature_image p:first-child{
 margin-top: 175px;
 font-size: 13px;
@@ -569,9 +663,10 @@ content: "\2022";
   line-height: 17px;
 }
 
-.options_wrapper>div:nth-child(n) div:nth-child(3) span {
+.options_wrapper>div:nth-child(n) div:nth-child(3) span:first-of-type {
   font-weight: 500;
   line-height: 17px;
+
 }
 
 .options_wrapper>div:nth-child(n) div:nth-child(3){
@@ -688,6 +783,10 @@ content: "\2022";
   color: #f42;
 }
 
+.latest_deals .details a:hover{
+  color: black;
+}
+
 
 
 .deals_wrapper{
@@ -703,11 +802,16 @@ grid-gap:  5px;
 
 .deals_image{
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+  background-size: 100%;
+  background-position: left bottom;
   height: 75px;
   width: 75px;
   min-width: 75px;
+}
+
+.latest_deals .description a:hover{
+  box-shadow: inset 0 -1px 0 rgba(255,68,34,.25);
+  color: #f42;
 }
 
 .deals_wrapper>div:nth-child(1) .deals_image{
@@ -777,22 +881,22 @@ color:#aaa;
 .contact_links{
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #131313;;
   color: white;
-  height: 170px;
+  height: 160px;
 }
 
 .media{
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top:70px;
+  margin-top:30px;
 }
 
 .media li{
   width: 40px;
   height: 40px;
-  margin: 5px;
+  margin: 3px;
   padding: 12px;
   border-radius: 50%;
   background-color: #333333;
@@ -826,12 +930,12 @@ color:#aaa;
 
 .pinterest i{
   background: transparent url(images/sprite.svg);
-  background-position: -272px -272px;
+  background-position: -672px -672px;
 }
 
 .rss i{
   background: transparent url(images/sprite.svg);
-  background-position: -672px -672px;
+  background-position: -816px -816px;
 }
 
 .mail i{
@@ -843,20 +947,50 @@ color:#aaa;
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
 }
+
 
 .contact_options li{
   margin: 5px;
 }
 
+.contact_options li a:hover{
+  color:white;
+}
 
 .copy_rights {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 98px;
+  flex-direction: column;
+  height: 160px;
   background-color: black;
   color: white;
-  padding-top: 40px
+  padding-top: 3px;
+  align-items: center;
+  font-size: 13px;
+  color:  rgba(255, 255, 255, 0.6);
+}
+
+.copy_rights li{
+ display: inline-block;
+ line-height:30px;
+ padding-left: 4px;
+}
+.media li:hover {
+  background-color: black;
+  border: #333333 2px solid;
+  padding: 10px;
+}
+
+.copy_rights .tnw img {
+  height: 9px;
+}
+
+.copy_rights b{
+  color: #f42;
+}
+
+.copy_rights .stackpath img {
+  height: 9px;
 }
