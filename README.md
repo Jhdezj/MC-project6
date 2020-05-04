@@ -40,7 +40,7 @@ This project consists of replicating [The Next Web](https://thenextweb.com/) fro
 
 ## Live Demo
 
-- [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-project6/d5b879cae85d586fbf321600b590214a86642557/index.html)
+- [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-project6/caf596d12ec808c2dfb4a5cc9b824b00bf614847/index.html)
 
 
 ## Author
