@@ -18,6 +18,11 @@ a:active {
   text-decoration: none;
 }
 
+.title,
+.nav_options {
+  display: none;
+}
+
 nav {
   background-color: white;
   display: grid;
@@ -279,7 +284,6 @@ h1 {
 }
 
 .cover_wrapper {
-  border: red;
   height: 100%;
   left: 0;
   position: absolute;
@@ -880,14 +884,15 @@ h2 a:hover::after {
   flex-direction: column;
   background-color: #131313;
   color: white;
-  height: 160px;
+  padding-bottom: 30px;
 }
 
 .media {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px auto;
+  width: 95%;
 }
 
 .media i {
@@ -926,6 +931,10 @@ h2 a:hover::after {
   background-position: -816px -816px;
 }
 
+.contact_links li.rss {
+  display: none;
+}
+
 .mail i {
   background: transparent url(images/sprite.svg);
   background-position: -576px -576px;
@@ -933,10 +942,11 @@ h2 a:hover::after {
 
 .contact_options {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px auto 0;
   color: rgba(255, 255, 255, 0.6);
+  width: 97%;
 }
 
 .copy_rights {
@@ -952,4 +962,10 @@ h2 a:hover::after {
 
 .copy_rights b {
   color: #f42;
+}
+
+@media (min-width: 315px) {
+  .contact_links li.rss {
+    display: block;
+  }
 }
